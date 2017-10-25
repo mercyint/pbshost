@@ -6,7 +6,8 @@ $j=$.noConflict();
 var params=[];
 var scripts = document.getElementsByTagName('script');
 for(var i = 0 ; i < scripts.length; i++){
-	if($j(scripts[i]).attr('src').indexOf('mi-overlay.js') > -1){
+    console.log($j(scripts[i]).attr('src'));
+	if(typeof $j(scripts[i]).attr('src') != 'undefined' && $j(scripts[i]).attr('src').indexOf('mi-overlay.js') > -1){
         params = $j(scripts[i]).data();
 	}
 }
@@ -43,8 +44,6 @@ var vimeo;
 if (!$j("link[href='https://cdn.rawgit.com/mercyint/pbshost/master/plugins/css/overlay.css']").length){
     $j('<link href="https://cdn.rawgit.com/mercyint/pbshost/master/plugins/css/overlay.css" rel="stylesheet">').appendTo("head");
 }
-
-
 
 if(video_url){
     if(video_url.indexOf('youtu') > -1){
