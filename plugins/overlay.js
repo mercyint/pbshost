@@ -32,8 +32,8 @@ if(params['autoplay']){
 var youtube;
 var vimeo;
 
-if (!$j("link[href='css/overlay.css']").length){
-    $j('<link href="css/overlay.css" rel="stylesheet">').appendTo("head");
+if (!$j("link[href='https://cdn.rawgit.com/mercyint/pbshost/master/plugins/css/overlay.css']").length){
+    $j('<link href="https://cdn.rawgit.com/mercyint/pbshost/master/plugins/css/overlay.css" rel="stylesheet">').appendTo("head");
 }
 
 
@@ -141,7 +141,7 @@ $j('document').ready(function(){
     		'onclick':'document.getElementById("overlay").style.display = "none"',
     	}).empty();
     	var closer = $j('<img/>').attr({
-    		'src':'images/close-button.png',
+    		'src':'https://cdn.rawgit.com/mercyint/pbshost/master/plugins/images/close-button.png',
     		'id':'closer',
     		'onclick':'document.getElementById("overlay").style.display = "none"',
     	});
