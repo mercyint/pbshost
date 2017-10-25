@@ -5,11 +5,25 @@
 </head>
 <body>
 
+<!--- BEGIN MI PLUGIN -->
+<!---
+MI Responsive Image & Video Lightbox
+by Sarah Dudley |  Mercy Interactive, Inc.
 
+The following will present a lightbox overlaying the entire page on pageload. It is responsive for all images as well as videos at 16:9. Images will not scale any larger than their original size, but will scale down to accommodate smaller screen sizes. For images, it is recommend that both a portrait and landscape orientations be provided, but not required.
+
+The lightbox can contain:
+- Static image with mobile alternative
+- Vimeo video
+- YouTube video
+
+Responsive videos are set to 16:9 aspect ratio. Support for other dimensions can be added if demand exists.
+It does not currently utilize cookies to limit the number of times the lightbox displays but can be updated if the need arises.
+
+NOTE: This plugin was created by Mercy Interactive, Inc., a third-party consultant to PBS and its affiliate stations. It is not directly supported by PBS Digital. For support or feature requests e-mail info@mercy-interactive.com
+
+-->
     <div id="overlay"><div id="video_overlay"><div class="fluid-width-video-wrapper"></div></div></div>
-
-
-    
     <script src="https://cdn.rawgit.com/mercyint/pbshost/master/plugins/overlay.js" 
         data-portrait="https://d1qbemlbhjecig.cloudfront.net/prod/filer_public/wlvt2-pbs/mi_assets/0ccac26733_Lightbox2.jpg"
         data-landscape="https://d1qbemlbhjecig.cloudfront.net/prod/filer_public/wlvt2-pbs/mi_assets/0ccac26733_Lightbox2.jpg"
@@ -17,6 +31,7 @@
         data-video=""
         data-autoplay="true"></script>
     
+<!--- END MI PLUGIN -->
     
 </body>
 </html>
