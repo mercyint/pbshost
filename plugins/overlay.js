@@ -4,14 +4,23 @@ function init(){
 $j=$.noConflict();
 
  var scripts = document.getElementsByTagName('script');
+for(var i = 0 ; i < scripts.length; i++){
+	if(scripts[i]){
+    	console.log(scripts[i]);
+	}
+}
  var lastScript = scripts[scripts.length-1];
  var params = $j(lastScript).data();
      
 if(params['portrait']){
     var portrait = params['portrait'];
-}     
+}else{
+    var portrait = false;    
+}
 if(params['landscape']){
     var landscape = params['landscape'];
+}else{
+    var landscape = false;    
 }
 if(params['href']){
     var link_url = params['href'];
