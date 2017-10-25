@@ -6,7 +6,6 @@ $j=$.noConflict();
 var params=[];
 var scripts = document.getElementsByTagName('script');
 for(var i = 0 ; i < scripts.length; i++){
-    console.log($j(scripts[i]).attr('src'));
 	if(typeof $j(scripts[i]).attr('src') != 'undefined' && $j(scripts[i]).attr('src').indexOf('mi-overlay.js') > -1){
         params = $j(scripts[i]).data();
 	}
