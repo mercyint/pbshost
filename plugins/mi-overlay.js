@@ -41,8 +41,8 @@ if(params['autoplay']){
 var youtube;
 var vimeo;
 
-if (!$j("link[href='https://cdn.rawgit.com/mercyint/pbshost/master/plugins/css/overlay.css']").length){
-    $j('<link href="https://cdn.rawgit.com/mercyint/pbshost/master/plugins/css/overlay.css" rel="stylesheet">').appendTo("head");
+if (!$j("link[href='https://cdn.rawgit.com/mercyint/pbshost/v1.0.2/plugins/css/overlay.css']").length){
+    $j('<link href="https://cdn.rawgit.com/mercyint/pbshost/v1.0.2/plugins/css/overlay.css" rel="stylesheet">').appendTo("head");
 }
 
 if(video_url){
