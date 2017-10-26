@@ -1,7 +1,8 @@
 
 function init(){
-
-$j=$.noConflict();
+if(typeof $j == 'undefined'){
+    $j=$.noConflict();    
+}
 
 var params=[];
 var scripts = document.getElementsByTagName('script');
