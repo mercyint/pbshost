@@ -1,5 +1,5 @@
     #overlay{
-        position:fixed;
+        position:absolute;
         width:100vw;
         height:100vh;
         display:flex;
@@ -8,6 +8,9 @@
 		background-color:rgba(0,0,0,.5);
 		text-align: center;
 	  	cursor: pointer;
+	  	top: 0;
+        left: 0;
+        z-index: 1000;
     }
     #image_slide{
         display: flex;
